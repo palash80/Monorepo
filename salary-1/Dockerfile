@@ -5,7 +5,7 @@ COPY pom.xml /java/
 COPY src /java/src/
 RUN mvn clean package
 
-FROM alpine:latest
+FROM alpine:3.23.3
 MAINTAINER Opstree Solutions
 USER root
 RUN apk update && \
